@@ -45,7 +45,7 @@ func CreateUser(c *gin.Context) {
 			"message": "Email invalido",
 		})
 
-	} else if len(cpf) != 9 {
+	} else if len(cpf) != 11 {
 		c.JSON(http.StatusNotAcceptable, gin.H{
 			"message": "CPF invalido",
 		})
@@ -137,7 +137,7 @@ func PutUser(c *gin.Context) {
 			"message": "Email invalido",
 		})
 
-	} else if len(cpf) != 9 {
+	} else if len(cpf) != 11 {
 		c.JSON(http.StatusNotAcceptable, gin.H{
 			"message": "CPF invalido",
 		})
